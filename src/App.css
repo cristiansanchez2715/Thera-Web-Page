@@ -1,0 +1,486 @@
+.App {
+  text-align: center;
+  background-color: #222;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* ESTILOS GENERALIZADOS */
+
+body, html{
+  background-color: #222;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Cutive Mono', monospace;
+  
+}
+h1, h2{
+  color: var(--color-primario)
+}
+h3, h4, h5, h6{
+  color: var(--color-secundario);
+}
+
+p{
+color: var(--color-terciario);
+font-family: 'Architects Daughter', cursive;
+}
+a{
+  font-family: 'Architects Daughter', cursive;
+  color: var(--color-primario);
+}
+
+:root {
+  --color-secundario:  #800020; /* Naranja */
+  --color-primario: #856404; /* Verde oscuro */
+  --color-terciario: #116466;
+}
+
+.barnav-item{
+  margin-left: 100px;
+  font-size: 25px;
+  border-bottom: 3px solid transparent;
+}
+.barnav-item:hover{
+  text-decoration: underline;
+  border-bottom-color:rgb(3, 195, 3);
+  color: rgb(3, 195, 3);
+}
+.barnav{
+  width: 100vw;
+  background-color:  #007BA7;
+  padding: 10px;
+  border-bottom: solid  var(--color-secundario)4px;
+  /* position: fixed; */
+}
+
+/* inicio */
+
+#inicio{
+  width: 100vw;
+  height: 100vh;
+}
+
+.thera-web{
+  font-size: 160px;
+
+color: var(--color-secundario);
+}
+
+.inicio{
+  background-image: url("./asses/internet.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -100px;
+}
+
+.thera-web-container{
+  position: absolute;
+  top: 32.5%;
+ left: 22.5%;
+}
+
+.btn-portafolio{
+  
+
+  /* padding: 10px; */
+  background-color: var(--color-terciario);
+        border: none;
+        border-radius: 5px;
+        color: var(--color-secundario);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 20px 30px;
+        text-transform: uppercase;
+        transition: background-color .3s ease;
+        margin-top: 100px;
+}
+
+.btn-portafolio:hover{
+  background-color: var(--color-primario);
+  color: white;
+}
+
+
+/* UTILIDAD */
+
+#utilidad{
+  height: auto;
+  width: 100vw;
+  background-color: #222;
+  padding-bottom: 100px;
+}
+
+.container-utilidad{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.container-utillidad-information{
+width: 60%
+}
+
+.container-img-utilidad{
+  width: 40%;
+}
+
+.img-utilidad{
+  border-radius: 50%;
+}
+
+.list-items{
+  /* list-style: none; */
+  color: var(--color-primario);
+}
+
+
+/*tipos de servicios */
+
+.container-tiposdeservicios{
+  display: flex;
+  flex-direction: row;
+}
+
+.tipodesservicio{
+  width: 30%;
+}
+
+.img-servicio{
+  width: 400px;
+  height: 400px;
+}
+
+/* precios */
+
+.card-prices-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.price-card {
+  background-color: transparent; /* Hace que el fondo de la tarjeta sea transparente */
+  border: none; /* Elimina el borde de la tarjeta */
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.price-card h3 {
+  /* color: #333; Color del texto del título */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.price-card h4 {
+  /* color: #333; Color del texto del precio */
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.information-card-price p {
+  /* color: #666; Color del texto del contenido */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* contacto */
+
+
+.contact-info {
+  background-color: #f9f9f9; /* Color de fondo de la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Espaciado interno */
+}
+
+.contact-info h1 {
+  color: #333; /* Color del título */
+  font-size: 24px;
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.contact-info p {
+  color: #666; /* Color del texto */
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.contact-info p strong {
+  color: #000; /* Color del texto en negrita */
+}
+
+.contact-info a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.contact-info a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse sobre el enlace */
+}
+
+
+@media(min-width: 320px){
+.barnav{
+/* position: absolute; */
+/* left: ; */
+margin-left: 0px;
+}
+
+.inicio{
+  width: 120vw;
+}
+
+
+.barnav-item{
+ visibility: hidden;
+}
+.btn-portafolio{
+  margin-left: 00px;
+}
+
+.thera-web {
+  font-size: 60px;
+  color: var(--color-secundario);
+}
+.thera-web-container {
+  position: absolute;
+  top: 32.5%;
+  left: 5%;
+}
+
+.img-utilidad {
+  border-radius: 30%;
+  width: 200px;
+  height: 200px;
+}
+.container-img-utilidad {
+  width: auto;
+}
+
+.parrafo-pagina-web{
+  margin-left: -150px;
+}
+.list-items{
+  margin-left: -200px;
+}
+
+.container-tiposdeservicios {
+  display: flex;
+  flex-direction: row;
+}
+.img-servicio {
+  width: 100px;
+  height: 100px;
+}
+.tipodesservicio {
+  width: 30%;
+  margin-left: 25px;
+}
+.container-title-service{
+  width: 50%;
+  margin-left: calc(50% - 25%);
+}
+
+.descriptionPrecios{
+  visibility: hidden;
+}
+
+#precios{
+  visibility: hidden;
+}
+.contact-info {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: -1000px;
+  width: 100vw;
+}
+}
+
+
+@media(min-width: 460px){
+  
+  .inicio{
+    width: 105vw;
+  }
+  .thera-web-container {
+    position: absolute;
+    top: 32.5%;
+    left: 15%;
+}
+
+.img-utilidad {
+  border-radius: 30%;
+  width: 200px;
+  height: 200px;
+}
+.parrafo-pagina-web {
+  margin-left: -150px;
+  margin-top: 100px;
+}
+
+
+}
+
+
+@media(min-width: 580px){
+  
+  .contact-info {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -800px;
+    width: 100vw;
+}
+
+}
+
+
+@media(min-width: 720px){
+  .barnav{
+    visibility: visible;
+    margin-left: -50px;
+  }
+  .barnav {
+    visibility: visible;
+    margin-left: 5%;
+    width: 70vw;
+  }
+  .barnav-item{
+    visibility: visible;
+    margin-left: 25px;
+  }
+  .thera-web-container {
+    position: absolute;
+    top: 32.5%;
+    left: 15%;
+}
+
+.thera-web {
+  font-size: 100px;
+  color: var(--color-secundario);
+}
+
+.list-items{
+  visibility: visible;
+}
+
+.contact-info {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: -800px;
+  width: 100vw;
+  margin-top: -600px;
+}
+
+.container-utillidad-information {
+font-size: 20px;
+}
+}
+
+
+@media(min-width: 900px){
+  .contact-info {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -800px;
+    width: 100vw;
+    margin-top: 00px;
+}
+  .card-prices-container{
+    visibility: visible;
+  }
+
+  .descriptionPrecios{
+    visibility: visible;
+  }
+
+  .parrafo-pagina-web {
+    margin-left: 0px;
+    margin-top: 100px;
+}
+.img-utilidad {
+  border-radius: 30%;
+  width: 250px;
+  height: 200px;
+  margin-left: 5%;
+}
+
+.list-items {
+  visibility: visible;
+  margin-left: 5%;
+}
+
+.img-servicio {
+  width: 150px;
+  height: 150px;
+}
+
+.container-utillidad-information {
+  font-size: 20px;
+  width: 80vw;
+  margin-left: 0;
+}
+.img-servicio {
+  width: 200px;
+  height: 200px;
+}
+
+}
+
+
+@media(min-width: 1280px){
+  .thera-web-container {
+    position: absolute;
+    top: 32.5%;
+    left: 25%;
+}
+
+  
+}
+@media(min-width: 1400px){
+
+  .thera-web-container {
+    position: absolute;
+    top: 32.5%;
+    left: 25%;
+}
+
+  .thera-web {
+    font-size: 160px;
+    color: var(--color-secundario);
+  }
+
+  .img-servicio {
+    width: 300px;
+    height: 300px;
+}
+.img-utilidad {
+  border-radius: 30%;
+  width: 300px;
+  height: 300px;
+  margin-left: 5%;
+}
+.barnav {
+  visibility: visible;
+  margin-left: calc(50% - 35vw);
+  width: 70vw;
+}
+}
